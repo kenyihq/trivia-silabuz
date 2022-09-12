@@ -1,3 +1,6 @@
+import os
+
+# Trivia 1
 def ejercicio_1():
     palabra = input("Ingresa una palabra: ")
     numero = int(input("Ingresa el número de veces que se repetirá: "))
@@ -36,6 +39,7 @@ def ejercicio_4():
         print(" ")
         x += 1
 
+# Clase 3
 def reto_1():
   x = int(input("Ingrese el primer número: "))
   y = int(input("Ingrese el segundo número: "))
@@ -55,13 +59,14 @@ def reto_4():
   y = int(input("Ingrese el segundo número: "))
   print((x**2+ y**2)**(1/2))
 
+# Clase 4
 def reto2_1():
   x = int(input("Ingrese su edada: "))
   x = [i for i in range(1, x+1)]
   print(x)
 
 def reto2_2():
-  x = int(input("Ingrese su edada: "))
+  x = int(input("Ingrese su edad: "))
   x = [i for i in range(1, x+1) if i%2!=0]
   print(x)
 
@@ -72,11 +77,13 @@ def reto2_3():
     factorial += i*factorial
   print(factorial)
 
+#Clase 5
 def reto3_1():
   x = int(input("Ingrese un número del 1 al 12: "))
   if x in range(13):
     x = [i*x for i in range(1, 13)]
-
+  else:
+    x = x, "no es una opcion dentro del rango permitido"
   print(x)
 
 def reto3_2():
@@ -125,6 +132,7 @@ def run():
             break
         
         elif opcion == '5':
+            os.system("clear")
             print("Elegiste RETOS")
             print("INVENTO MIS REGLAS")
             print("Clase 3 - Silabuz\n")
@@ -152,6 +160,7 @@ def run():
               run()
               break
         elif opcion == '6':
+            os.system("clear")
             print("Elegiste RETOS")
             print("JUEGO Y COMPARTO")
             print("Clase 4 - Silabuz\n")
@@ -175,6 +184,7 @@ def run():
               run()
               break
         elif opcion == '7':
+            os.system("clear")
             print("Elegiste RETOS")
             print("DESAFIO MI LÓGICA")
             print("Clase 5 - Silabuz\n")
